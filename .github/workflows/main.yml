@@ -36,4 +36,4 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
         env:
-          TENANT: ${{secrets.TENANT }}
+          TENANT: ${{secrets.TD_BASEURL }}
