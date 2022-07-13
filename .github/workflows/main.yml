@@ -29,5 +29,5 @@ jobs:
         run: cd bin/
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: pwd
+      - run: pwd
+      - run: cd bin/
