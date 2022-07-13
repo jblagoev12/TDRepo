@@ -26,8 +26,8 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       - name: Go to folder
-        run: cd bin
+        run: cd bin/
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: ./TDClient.sh -o 1 -m master.xml -d cd "./../SQLs/" -pl yes
+        run: pwd
