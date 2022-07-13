@@ -29,7 +29,7 @@ jobs:
         run: cd bin/
 
       # Runs a single command using the runners shell
-      - run: pwd
-      - run: cd bin/TDClient.sh
+      - run: ls
+      - run: cd ./../bin/TDClient.sh
       - run: ls
       - run: pwd
