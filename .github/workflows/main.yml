@@ -29,12 +29,9 @@ jobs:
         run: cd bin/
 
       # Runs a single command using the runners shell
-      - run: export TD_BASEURL="https://0509.callidusondemand.com"
-      - run: export TD_PASSWORD="Perf0rm@1"
-      - run: export TD_USERNAME="RestAdmin"
       - run: cd bin && chmod 777 * &&./TDClient.sh -o 1 -m master.xml -d "./../SQLs/" -pl yes
         env:
-          TD_BASEURL: ${{secrets.TD_BASEURL }}
+          TD_BASEURL: export TD_BASEURL="https://0509.callidusondemand.com"
           TD_LOGDIRECTORY: ${{secrets.TD_LOGDIRECTORY }}
-          TD_PASSWORD: ${{ secrets.TD_PASSWORD }}
-          TD_USERNAME: ${{ secrets.TD_USERNAME }}
+          TD_PASSWORD: export TD_PASSWORD="Perf0rm@1"
+          TD_USERNAME: export TD_USERNAME="RestAdmin"
