@@ -31,3 +31,6 @@ jobs:
       # Runs a single command using the runners shell
       - run: pwd
       - run: cd bin/
+      - run: ls
+      - run: pwd
+      - run: ./TDClient.sh
