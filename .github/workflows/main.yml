@@ -30,6 +30,6 @@ jobs:
 
       # Runs a single command using the runners shell
       - run: ls
-      - run: chmod 777 *
-      - run: cd bin/TDClient.sh
+      - run: cd bin && pwd
+      - run: ls
       - run: pwd
