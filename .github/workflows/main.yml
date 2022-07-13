@@ -31,5 +31,8 @@ jobs:
       # Runs a single command using the runners shell
       - run: ls
       - run: cd bin && chmod 777 * &&./TDClient.sh -o 1 -m master.xml -d "./../SQLs/" -pl yes
-      - run: ls
-      - run: pwd
+        env:
+          TD_BASEURL: ${{secrets.TD_BASEURL }}
+          TD_LOGDIRECTORY: ${{secrets.TD_BASEURL }}
+          TD_PASSWORD: ${{ secrets.TD_PASSWORD }}
+          TD_USERNAME: ${{ secrets.TD_USERNAME }}
