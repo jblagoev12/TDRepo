@@ -31,7 +31,7 @@ jobs:
       # Runs a single command using the runners shell
       - run: cd bin && chmod 777 * &&./TDClient.sh -o 1 -m master.xml -d "./../SQLs/" -pl yes
         env:
-          TD_BASEURL: "https://0509.callidusondemand.com"
+          TD_BASEURL: ${{secrets.TD_BASEURL }}
           TD_LOGDIRECTORY: .
           TD_PASSWORD: ${{secrets.TD_PASSWORD }}
           TD_USERNAME: ${{secrets.TD_USERNAME }}
