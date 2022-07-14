@@ -36,7 +36,7 @@ jobs:
       - run: cd bin && chmod 777 * &&./TDClient.sh -o 1 -m master.xml -d "./../SQLs/" -pl yes
         env:
           TD_BASEURL: ${{secrets.TD_BASEURL }}
-          TD_LOGDIRECTORY: .
+          TD_LOGDIRECTORY: ${{secrets.TD_LOGDIRECTORY }}
           TD_PASSWORD: ${{secrets.TD_PASSWORD }}
           TD_USERNAME: ${{secrets.TD_USERNAME }}
       - name: Upload math result for job 1
