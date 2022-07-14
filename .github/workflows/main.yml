@@ -29,7 +29,7 @@ jobs:
         run: cd bin/
         
 
-      - run: echo ${{secrets.TD_BASEURL }}
+      - run: pwd
       
       # Runs a single command using the runners shell
       - run: cd bin && chmod 777 * &&./TDClient.sh -o 1 -m master.xml -d "./../SQLs/" -pl yes
