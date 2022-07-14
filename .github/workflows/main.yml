@@ -28,7 +28,7 @@ jobs:
       - name: Go to folder
         run: cd bin/
         
-      - name: environment variable
+
       - run: echo ${{secrets.TD_BASEURL }}
       
       # Runs a single command using the runners shell
