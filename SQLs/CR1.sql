@@ -1,5 +1,5 @@
 --liquibase formatted sql
---changeset yogananda:9995
+--changeset yogananda:99
 --preconditions onFail:CONTINUE
 --comment: Initial creation of table Yogananda
 --validCheckSum: ANY
@@ -13,11 +13,11 @@ Create Table Yogananda1 (
 
 
 --liquibase formatted sql
---changeset yogananda:991
+--changeset yogananda:100
 --preconditions onFail:CONTINUE
 --comment: Initial creation of table Yogananda
 --validCheckSum: ANY
-Create Table Payments (
+Create Table Payments1 (
    ID INTEGER,
    NAME VARCHAR(10),
    PRIMARY KEY (ID)
