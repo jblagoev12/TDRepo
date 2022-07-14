@@ -35,3 +35,8 @@ jobs:
           TD_LOGDIRECTORY: .
           TD_PASSWORD: ${{secrets.TD_PASSWORD }}
           TD_USERNAME: ${{secrets.TD_USERNAME }}
+      - name: Upload math result for job 1
+        uses: actions/upload-artifact@v3
+        with:
+          name: logs
+          path: liquibase*
