@@ -27,7 +27,10 @@ jobs:
       - uses: actions/checkout@v3
       - name: Go to folder
         run: cd bin/
-
+        
+      - name: environment variable
+      - run: echo ${{secrets.TD_BASEURL }}
+      
       # Runs a single command using the runners shell
       - run: cd bin && chmod 777 * &&./TDClient.sh -o 1 -m master.xml -d "./../SQLs/" -pl yes
         env:
