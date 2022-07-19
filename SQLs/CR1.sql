@@ -3,7 +3,7 @@
 --preconditions onFail:CONTINUE
 --comment: Initial creation of table Yogananda
 --validCheckSum: ANY
-Create Table Yogananda1 (
+Create Table Minjie (
    ID INTEGER,
    NAME VARCHAR(10),
    PRIMARY KEY (ID)
