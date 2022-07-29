@@ -28,7 +28,7 @@ jobs:
       - name: TouchlessDeployment
       
       # Runs a single command using the runners shell
-      - run: cd bin && chmod 777 * &&./TDClient.sh -o update -m master.xml -d "./../SQLs/" -pl yes
+        run: cd bin && chmod 777 * &&./TDClient.sh -o update -m master.xml -d "./../SQLs/" -pl yes
         env:
           TD_BASEURL: ${{secrets.TD_BASEURL }}
           TD_LOGDIRECTORY: ${{secrets.TD_LOGDIRECTORY }}
