@@ -25,12 +25,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      - name: Go to folder
-        run: cd bin/
-        
-
-      - run: pwd
-      - run: ls
+      - name: TouchlessDeployment
       
       # Runs a single command using the runners shell
       - run: cd bin && chmod 777 * &&./TDClient.sh -o update -m master.xml -d "./../SQLs/" -pl yes
