@@ -29,11 +29,11 @@ jobs:
         run: cd bin && chmod 777 * &&./TDClient.sh -o update -m master.xml -d "./../SQLs/" -pl yes
         env:
           TD_BASEURL: ${{secrets.TD_BASEURL }}
-          TD_LOGDIRECTORY: ${{secrets.TD_LOGDIRECTORY }}
+          TD_LOGDIRECTORY: Touchless-Logs
           TD_PASSWORD: ${{secrets.TD_PASSWORD }}
           TD_USERNAME: ${{secrets.TD_USERNAME }}
       - name: Upload Touchless Deployment Logs
         uses: actions/upload-artifact@v3
         with:
           name: logs
-          path: ./Touchless-Logs/
+          path: Touchless-Logs/
