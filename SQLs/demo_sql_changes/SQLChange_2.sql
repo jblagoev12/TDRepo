@@ -1,5 +1,5 @@
 --liquibase formatted sql
---changeset JBLAGOEV:DEMO_SQL_3 failOnError:true endDelimiter:/
+--changeset JBLAGOEV:DEMO_SQL_3_1 failOnError:true endDelimiter:/
 --rollback DROP PROCEDURE PROC_DEMO_SQL; 
 --comment: Initial creation of procedure PROC_DEMO_SQL
 --validCheckSum: ANY
