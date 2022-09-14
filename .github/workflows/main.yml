@@ -15,7 +15,7 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   build:
-    environment: 0531
+    environment: "0531"
     # The type of runner that the job will run on the
     runs-on: ubuntu-latest
 
@@ -29,7 +29,7 @@ jobs:
         run: cd bin && chmod 777 * &&./TDClient.sh -o update -m master.xml -d "./../SQLs/" -pl yes
         env:
           TD_BASEURL: ${{secrets.TD_BASEURL }}
-          TD_LOGDIRECTORY: ./Touchless-Logs
+          TD_LOGDIRECTORY: Touchless-Logs
           TD_PASSWORD: ${{secrets.TD_PASSWORD }}
           TD_USERNAME: ${{secrets.TD_USERNAME }}
       - name: Upload Touchless Deployment Logs
