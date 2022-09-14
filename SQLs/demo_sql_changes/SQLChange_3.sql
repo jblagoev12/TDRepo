@@ -7,4 +7,3 @@
 --comment: Add column comments to table TABLE_DEMO_SQL
 --validCheckSum: ANY
 alter table TABLE_DEMO_SQL add (COMMENTS NVARCHAR(1000));
-
