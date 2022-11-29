@@ -16,7 +16,7 @@ BEGIN
   
   select count(*) into z from TABLE_DEMO_SQL;
   
-  Y = :X + :Z + 1;
+  Y = :X + :Z + 1; 
 END;
 /
 
